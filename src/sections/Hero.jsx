@@ -29,8 +29,8 @@ const Hero = () => {
         </p>
         <Button label="Shop now" iconUrl={arrowRight} />
         <div className="flex justify-start items-start   flex-wrap w-full mt-20 gap-16">
-          {statistics.map((state, index) => (
-            <div key={state.label}>
+          {statistics.map((state) => (
+            <div key={state.label+Math.random()}>
               <p className="text-4xl font-palanquin font-bold">{state.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {state.label}
@@ -51,7 +51,7 @@ const Hero = () => {
 
         <div className="flex sm:gap-6 gap-4 absolute  -bottom-[5%]  sm:left-[10%] max-sm:px-6">
           {shoes.map((shoes) => (
-            <div key={shoes}>
+            <div key={Math.random()}>
               <ShoesCard
                 imgURL={shoes}
                 changeBigShoeImage={(shoe) => {setbigShoeImg(shoe)}}
