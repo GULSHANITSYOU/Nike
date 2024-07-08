@@ -25,7 +25,7 @@ const Nav = () => {
           <img src={hamburger} alt="hamburger" width={25} height={25} />
         </div>
 
-        <button className="bg-slate-400 py-2 px-4 rounded font-medium hover:bg-slate-700 transition mr-8">Sign in</button>
+        {/* <button className="bg-slate-400 py-2 px-4 rounded font-medium hover:bg-slate-700 transition mr-8">Sign in</button> */}
       </nav>
     </header>
   );

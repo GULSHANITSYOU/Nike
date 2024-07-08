@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({ label, iconUrl,bagroundColor,borderColor,textColor }) => {
+const Button = ({ label, iconUrl,bagroundColor,borderColor,textColor,fullwidth }) => {
   return (
-    <button className={`flex items-center justify-center gap-2 px-7 py-4 border font-montserrat text-lg  leading-none ${bagroundColor ? bagroundColor : "bg-coral-red"} rounded-full ${textColor?textColor:"text-white"} ${borderColor?borderColor:"border-coral-red"}`}>
+    <button className={`flex items-center ${fullwidth && 'w-full'} justify-center gap-2 px-7 py-4 border font-montserrat text-lg  leading-none ${bagroundColor ? bagroundColor : "bg-coral-red"} rounded-full ${textColor?textColor:"text-white"} ${borderColor?borderColor:"border-coral-red"}`}>
       {label}
       {iconUrl ?<img
         src={iconUrl}
