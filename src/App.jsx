@@ -20,7 +20,7 @@ const App = () => (
     <section className="padding">
       <PopularProducts />
     </section>
-    <section className="padding ">
+    <section className="padding">
       <SuperQuilty />
     </section>
     <section className="padding-x py-10">
